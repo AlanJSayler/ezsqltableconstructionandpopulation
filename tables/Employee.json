@@ -1,0 +1,25 @@
+{
+  "Fields": [
+    {"Name":"PersonID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+     "Reference":"Person"},
+    {"Name":"DateHired",
+     "Type":"Date",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"Demographic",
+     "Type":"varchar(10)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"Gender",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"IsUnionMember",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""}
+  ]
+}

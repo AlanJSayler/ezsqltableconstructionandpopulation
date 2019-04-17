@@ -33,7 +33,7 @@
      "Nullable":"False",
      "KeyType":""},
     {"Name":"Type",
-     "Type":"Varchar(10)",
+     "Type":"varchar(1)",
      "Nullable":"False",
      "KeyType":"",
      "ExactCheckConstraintAcceptableValues":["Employee","Inspector"]

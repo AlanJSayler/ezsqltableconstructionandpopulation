@@ -6,3 +6,6 @@ tables/Organization.py
 .idea/misc.xml
 .idea/ezsqltableconstructionandpopulation.iml
 __pycache__/helpers.cpython-34.pyc
+.newtestoutput.swp
+newtestoutput
+testoutput
