@@ -5,10 +5,10 @@ import os
 
 SUFFIX = '.json'
 DIR = 'tables'
-OUTPUTFILE = 'newtestoutput'
+OUTPUTFILE = 'Creation.sql'
 
 def createParentheticalSchema(outputfilename):
-    with open(OUTPUTFILE, 'w') as file:
+    with open(outputfilename, 'w') as file:
         for filename in os.listdir(DIR):
             if filename.endswith(SUFFIX):
                 query = getCreateTableQuery(filename)
@@ -53,4 +53,4 @@ def getCreateTableQuery(filename):
 
 
 
-createParentheticalSchema("something.sql")
+createParentheticalSchema(OUTPUTFILE)
