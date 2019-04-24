@@ -1,0 +1,30 @@
+{
+  "Fields": [
+    {"Name":"ProjectID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"OrganizationID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Organization"},
+    {"Name":"LocationID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Location"},
+    {"Name":"EstimatedCost",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"didWin",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"Details",
+     "Type":"varchar(40)",
+     "Nullable":"False",
+     "KeyType":""}
+  ]
+}

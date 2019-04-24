@@ -23,12 +23,12 @@ def getForeignKeyConstraints(filename):
     with open("{}/{}".format(DIR,filename)) as file:
         doc = json.load(file)
         filename = filename[:len(filename) - len(SUFFIX)]
+        query = ""
         for field in doc['Fields']:
             if field['KeyType'] == "Foreign" or field["KeyType"] == 'Combined':
-                return "ALTER TABLE {name} ADD CONSTRAINT FK_{keyname}{name} FOREIGN KEY ({keyname}) REFERENCES {ref}({keyname});\n".format(
+                query = query + "ALTER TABLE {name} ADD CONSTRAINT FK_{keyname}{name} FOREIGN KEY ({keyname}) REFERENCES {ref}({keyname});\n".format(
                     name = filename, keyname = field["Name"], ref = field["Reference"])
-            else:
-                return ""
+        return query
 
 def getCreateTableQuery(filename):
     with open("{}/{}".format(DIR,filename)) as file:

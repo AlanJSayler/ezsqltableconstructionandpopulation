@@ -1,0 +1,16 @@
+{
+  "Fields": [
+
+    {"Name":"ToolID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+      "Reference":"Equipment"},
+    {"Name":"Condition",
+     "Type":"varchar(10)",
+     "Nullable":"False",
+     "KeyType":""}
+
+
+  ]
+}

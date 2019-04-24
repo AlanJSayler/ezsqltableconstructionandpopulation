@@ -1,0 +1,16 @@
+{
+  "Fields": [
+    {"Name":"SkillID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"StateHourlyRate",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"NonStateHourlyRate",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""}
+  ]
+}

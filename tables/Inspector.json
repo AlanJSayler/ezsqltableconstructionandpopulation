@@ -1,0 +1,18 @@
+{
+  "Fields": [
+    {"Name":"PersonID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+     "Reference":"Person"},
+    {"Name":"OrganizationID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Organization"},
+    {"Name":"qualifications",
+     "Type":"varchar(40)",
+     "Nullable":"False",
+     "KeyType":""}
+    ]
+}

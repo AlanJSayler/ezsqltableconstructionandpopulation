@@ -1,0 +1,24 @@
+{
+  "Fields": [
+    {"Name":"OrganizationID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Organization"},
+    {"Name":"ToolID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+     "Reference":"Equipment"},
+    {"Name":"Cost",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"OnHand",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""}
+
+
+  ]
+}

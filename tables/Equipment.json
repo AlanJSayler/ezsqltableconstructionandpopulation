@@ -1,0 +1,26 @@
+{
+  "Fields": [
+    {"Name":"ToolID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"Name",
+     "Type":"varchar(20)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"Description",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"IsOwned",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"CurrentPlace",
+     "Type":"varchar(40)",
+     "Nullable":"False",
+     "KeyType":""}
+
+
+  ]
+}

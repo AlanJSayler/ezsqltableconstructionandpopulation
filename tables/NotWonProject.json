@@ -1,0 +1,14 @@
+{
+  "Fields": [
+    {"Name":"ProjectID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+     "Reference":"Project"},
+    {"Name":"WinningBidAmount",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""}
+
+  ]
+}

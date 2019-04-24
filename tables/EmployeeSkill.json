@@ -1,0 +1,14 @@
+{
+  "Fields": [
+    {"Name":"PersonID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Employee"},
+    {"Name":"SkillID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Skills"}
+  ]
+}

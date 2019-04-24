@@ -1,0 +1,28 @@
+{
+  "Fields": [
+    {"Name":"OrganizationID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Organization"},
+    {"Name":"LineItemID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"LineItem"},
+    {"Name":"QuoteID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"QuotedAmount",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"Status",
+     "Type":"varchar(10)",
+     "Nullable":"False",
+     "KeyType":""}
+
+
+  ]
+}

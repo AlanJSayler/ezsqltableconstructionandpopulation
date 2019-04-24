@@ -1,0 +1,32 @@
+{
+  "Fields": [
+    {"Name":"ToolID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"OwnedEquipment"},
+    {"Name":"PersonID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Employee"},
+    {"Name":"MaintenanceInstanceID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"TimeStampStart",
+     "Type":"Date",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"TimeStampEnd",
+     "Type":"Date",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"DescriptionOfWork",
+     "Type":"varchar(40)",
+     "Nullable":"False",
+     "KeyType":""}
+
+
+  ]
+}

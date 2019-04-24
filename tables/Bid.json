@@ -1,0 +1,22 @@
+{
+  "Fields": [
+    {"Name":"ProjectID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Project"},
+    {"Name":"BidID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"BidAmount",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"DateMade",
+     "Type":"Date",
+     "Nullable":"False",
+     "KeyType":""}
+
+  ]
+}

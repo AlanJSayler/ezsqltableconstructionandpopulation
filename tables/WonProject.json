@@ -1,0 +1,18 @@
+{
+  "Fields": [
+    {"Name":"ProjectID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+     "Reference":"Project"},
+    {"Name":"IsComplete",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"RecievedPayment",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""}
+
+  ]
+}

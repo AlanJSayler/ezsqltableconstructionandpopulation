@@ -1,0 +1,27 @@
+{
+  "Fields": [
+    {"Name":"ProjectID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Foreign",
+     "Reference":"Project"},
+    {"Name":"LineItemID",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Primary"},
+    {"Name":"MaterialType",
+     "Type":"varchar(10)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"Units",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"isOnHand",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""}
+
+
+  ]
+}
