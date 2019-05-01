@@ -13,7 +13,7 @@ CREATE TABLE Person (PersonID Int NOT NULL, CONSTRAINT PK_PersonIDPerson PRIMARY
 CREATE TABLE Project (ProjectID Int NOT NULL, CONSTRAINT PK_ProjectIDProject PRIMARY KEY (ProjectID), ProjectNumber varchar(40) NOT NULL, OrganizationID Int NOT NULL, LocationID Int NOT NULL, EstimatedCost Int NOT NULL, didWin varchar(1) NOT NULL, Details varchar(300) NOT NULL);
 CREATE TABLE Quote (OrganizationID Int NOT NULL, LineItemID Int NOT NULL, QuoteID Int NOT NULL, CONSTRAINT PK_QuoteIDQuote PRIMARY KEY (QuoteID), QuotedAmount Int NOT NULL, Status varchar(10) NOT NULL);
 CREATE TABLE RentedEquipment (OrganizationID Int NOT NULL, ToolID Int NOT NULL, CONSTRAINT PK_ToolIDRentedEquipment PRIMARY KEY (ToolID), Cost Int NOT NULL, OnHand varchar(1) NOT NULL);
-CREATE TABLE Skills (SkillID Int NOT NULL, CONSTRAINT PK_SkillIDSkills PRIMARY KEY (SkillID), StateHourlyRate Int NOT NULL, SKillCode varchar(3) NOT NULL, NonStateHourlyRate Int NOT NULL);
+CREATE TABLE Skills (SkillID Int NOT NULL, CONSTRAINT PK_SkillIDSkills PRIMARY KEY (SkillID), StateHourlyRate Int NOT NULL, SKillCode varchar(3) NOT NULL, NonStateHourlyRate Int NOT NULL, FringeBenefits Int NOT NULL);
 CREATE TABLE WonProject (ProjectID Int NOT NULL, CONSTRAINT PK_ProjectIDWonProject PRIMARY KEY (ProjectID), IsComplete varchar(1) NOT NULL, RecievedPayment varchar(1) NOT NULL);
 CREATE TABLE Work (PersonID Int NOT NULL, SkillID Int NOT NULL, ProjectID Int NOT NULL, WorkID Int NOT NULL, CONSTRAINT PK_WorkIDWork PRIMARY KEY (WorkID), DayWorked Date NOT NULL, HoursWorked Int NOT NULL, IsStateWork varchar(1) NOT NULL);
 ALTER TABLE Bid ADD CONSTRAINT FK_ProjectIDBid FOREIGN KEY (ProjectID) REFERENCES Project(ProjectID);

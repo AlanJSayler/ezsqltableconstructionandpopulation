@@ -15,6 +15,10 @@
     {"Name":"NonStateHourlyRate",
      "Type":"Int",
      "Nullable":"False",
-     "KeyType":""}
+     "KeyType":""},
+    {"Name":"FringeBenefits",
+      "Type":"Int",
+      "Nullable":"False",
+      "KeyType":""}
   ]
 }
