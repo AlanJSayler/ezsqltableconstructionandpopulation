@@ -27,7 +27,7 @@
      "Nullable":"False",
      "KeyType":""},
     {"Name":"Details",
-     "Type":"varchar(40)",
+     "Type":"varchar(300)",
      "Nullable":"False",
      "KeyType":""}
   ]
