@@ -12,21 +12,21 @@ Values
 (10, 'Coolconstructioncompany', 'anormalemailaddress@gmail.com', '123 industry street', 'Waverly', 'IN', '55113', 'N');
 
 INSERT INTO Location
-(LocationID, StreetAddress, City, State, Zip, SiteVisited, VisitationNotes)
+(LocationID, StreetAddress, City, State, Zip, SiteVisited, VisitationNotes, LocationDescription)
 Values
-(2, '123 not fake street', 'indiana city', 'IN', '55113', 'Y', 'here it is');
-UPDATE Location SET LocationDescription = '5 miles south of Beaver, Indiana on SR 335 (Pike County)';
+(2, '123 not fake street', 'indiana city', 'IN', '55113', 'Y', 'here it is', '5 miles south of Beaver, Indiana on SR 335 (Pike County)');
+
 
 INSERT INTO Location
-(LocationID, StreetAddress, City, State, Zip, SiteVisited, VisitationNotes)
+(LocationID, StreetAddress, City, State, Zip, SiteVisited, VisitationNotes, LocationDescription)
 Values
-(3, '123 baker street', 'indianapolis', 'IN', '55113', 'Y', 'here it is');
-UPDATE Location SET LocationDescription = '5 miles south of Beaver, Indiana on SR 335 (Pike County)';
+(3, '123 baker street', 'indianapolis', 'IN', '55113', 'Y', 'here it is', '5 miles south of Beaver, Indiana on SR 335 (Pike County)');
+
 
 INSERT INTO Project
 (OrganizationID, ProjectID, LocationID, ProjectNumber, EstimatedCost, didWin, Details)
 Values
-(1, 1, 1, 'PIK-335-005', 10000, 'Y', 'Replacement of single-span two-lane bridge (pre-stressed beam type).');
+(1, 1, 2, 'PIK-335-005', 10000, 'Y', 'Replacement of single-span two-lane bridge (pre-stressed beam type).');
 
 INSERT INTO Project
 (OrganizationID, ProjectID, LocationID, ProjectNumber, EstimatedCost, didWin, Details)
