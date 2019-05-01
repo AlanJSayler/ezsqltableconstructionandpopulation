@@ -10,7 +10,7 @@
      "Nullable":"False",
      "KeyType":""},
     {"Name":"Demographic",
-     "Type":"varchar(10)",
+     "Type":"Int",
      "Nullable":"False",
      "KeyType":""},
     {"Name":"Gender",

@@ -1,5 +1,5 @@
 CREATE TABLE Bid (ProjectID Int NOT NULL, BidID Int NOT NULL, CONSTRAINT PK_BidIDBid PRIMARY KEY (BidID), BidAmount Int NOT NULL, DateMade Date NOT NULL);
-CREATE TABLE Employee (PersonID Int NOT NULL, CONSTRAINT PK_PersonIDEmployee PRIMARY KEY (PersonID), DateHired Date NOT NULL, Demographic varchar(10) NOT NULL, Gender varchar(1) NOT NULL, IsUnionMember varchar(1) NOT NULL);
+CREATE TABLE Employee (PersonID Int NOT NULL, CONSTRAINT PK_PersonIDEmployee PRIMARY KEY (PersonID), DateHired Date NOT NULL, Demographic Int NOT NULL, Gender varchar(1) NOT NULL, IsUnionMember varchar(1) NOT NULL);
 CREATE TABLE EmployeeSkill (PersonID Int NOT NULL, SkillID Int NOT NULL);
 CREATE TABLE Equipment (ToolID Int NOT NULL, CONSTRAINT PK_ToolIDEquipment PRIMARY KEY (ToolID), Name varchar(20) NOT NULL, Description Int NOT NULL, IsOwned varchar(1) NOT NULL, CurrentPlace varchar(40) NOT NULL);
 CREATE TABLE Inspector (PersonID Int NOT NULL, CONSTRAINT PK_PersonIDInspector PRIMARY KEY (PersonID), OrganizationID Int NOT NULL, qualifications varchar(40) NOT NULL);
