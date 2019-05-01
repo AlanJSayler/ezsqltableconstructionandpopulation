@@ -6,6 +6,7 @@
      "KeyType":"Primary"},
     {"Name":"ProjectNumber",
      "Type":"varchar(40)",
+      "Nullable":"False",
      "KeyType":""},
     {"Name":"OrganizationID",
      "Type":"Int",

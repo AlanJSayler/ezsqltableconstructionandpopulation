@@ -1,0 +1,35 @@
+--Made some alterations to the schema since it wasn't sufficient for what we wanted. Let Alan know if you do this so he can change the scripts, and let Yer know so she knows to document the change
+--If you're running this on newer versions of the schema, you should be able (required) to avoid these changes.
+ALTER TABLE Location ADD LocationDescription varchar(300);
+ALTER TABLE Project ADD ProjectNumber varchar(40)
+ALTER TABLE PROJECT DROP COLUMN Details;
+ALTER TABLE Project ADD Details varchar(300);
+
+
+--Insert statements, send these to Alan, or post them on the project file page so they can be appended to the create script that gets turned in
+--Make 2-3 entries for each, instead of just the 1 though - this just has one for each for example purposes.
+INSERT INTO Organization
+(OrganizationID, Name, Email, StreetAddress, City, State, Zip, isState)
+Values
+(1, 'State of Indiania', 'something@indiana.gov', '123 fake street', 'Indianapolis', 'IN', '55113', 'Y');
+
+INSERT INTO Location
+(LocationID, StreetAddress, City, State, Zip, SiteVisited, VisitationNotes)
+Values
+(2, '123 not fake street', 'indiana city', 'IN', '55113', 'Y', 'here it is');
+UPDATE Location SET LocationDescription = '5 miles south of Beaver, Indiana on SR 335 (Pike County)'
+
+INSERT INTO Project
+(OrganizationID, ProjectID, LocationID, ProjectNumber, EstimatedCost, didWin, Details)
+Values
+(1, 1, 1, 'PIK-335-005', 10000, 'Y', 'Replacement of single-span two-lane bridge (pre-stressed beam type).');
+
+
+--Here's the actual select statement for Exhibit B, part C, we'll eventually take this off so that they can all be turned in together in a script.
+--Add the comment below to yours but with your exhibit for grading purposes
+--Exhibit B, Part C (equivalent to Exhibit C, Part A; Exhibit D, Part B)
+SELECT p.ProjectNumber, l.StreetAddress, l.City, l.State, l.ZIP, l.LocationDescription, p.Details
+FROM Project p
+INNER JOIN Location l ON l.LocationID = p.LocationID
+
+
