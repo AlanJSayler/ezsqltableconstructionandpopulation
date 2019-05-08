@@ -16,7 +16,7 @@ CREATE TABLE Quote (OrganizationID Int NOT NULL, LineItemID Int NOT NULL, QuoteI
 CREATE TABLE RentedEquipment (OrganizationID Int NOT NULL, ToolID Int NOT NULL, CONSTRAINT PK_ToolIDRentedEquipment PRIMARY KEY (ToolID), Cost Int NOT NULL, OnHand varchar(1) NOT NULL);
 CREATE TABLE Skills (SkillID Int NOT NULL, CONSTRAINT PK_SkillIDSkills PRIMARY KEY (SkillID), Rate Int NOT NULL, SkillCode varchar(3) NOT NULL, Classification Varchar(40) NOT NULL, FringeBenefits Int NOT NULL);
 CREATE TABLE WonProject (ProjectID Int NOT NULL, CONSTRAINT PK_ProjectIDWonProject PRIMARY KEY (ProjectID), IsComplete varchar(1) NOT NULL, RecievedPayment varchar(1) NOT NULL);
-CREATE TABLE Work (PersonID Int NOT NULL, SkillID Int NOT NULL, ProjectID Int NOT NULL, WorkID Int NOT NULL, CONSTRAINT PK_WorkIDWork PRIMARY KEY (WorkID), DayWorked Date NOT NULL, HoursWorked Int NOT NULL, IsStateWork varchar(1) NOT NULL);
+CREATE TABLE Work (PersonID Int NOT NULL, SkillID Int NOT NULL, ProjectID Int NOT NULL, WorkID Int NOT NULL, CONSTRAINT PK_WorkIDWork PRIMARY KEY (WorkID), DayWorked Date NOT NULL, HoursWorked Int NOT NULL, IsStateWork varchar(1) NOT NULL, IsOverTime varchar(1) NOT NULL);
 ALTER TABLE Bid ADD CONSTRAINT FK_ProjectIDBid FOREIGN KEY (ProjectID) REFERENCES Project(ProjectID);
 ALTER TABLE Demographic ADD CONSTRAINT FK_DemographicDemographic FOREIGN KEY (Demographic) REFERENCES Employee(Demographic);
 ALTER TABLE Employee ADD CONSTRAINT FK_PersonIDEmployee FOREIGN KEY (PersonID) REFERENCES Person(PersonID);
