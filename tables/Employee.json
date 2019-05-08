@@ -20,6 +20,14 @@
     {"Name":"IsUnionMember",
      "Type":"varchar(1)",
      "Nullable":"False",
+     "KeyType":""},
+    {"Name":"EmployeeNumber",
+     "Type":"varchar(40)",
+     "Nullable":"False",
+     "KeyType":""},
+    {"Name":"MaritalStatus",
+     "Type":"varchar(1)",
+     "Nullable":"False",
      "KeyType":""}
   ]
 }

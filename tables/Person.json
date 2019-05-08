@@ -37,6 +37,16 @@
      "Nullable":"False",
      "KeyType":"",
      "ExactCheckConstraintAcceptableValues":["Employee","Inspector"]
+     },
+     {"Name":"MiddleInitial",
+     "Type":"varchar(1)",
+     "Nullable":"False",
+     "KeyType":""
+     },
+     {"Name":"Type",
+     "Type":"varchar(10)",
+     "Nullable":"False",
+     "KeyType":""
      }
   ]
 }
