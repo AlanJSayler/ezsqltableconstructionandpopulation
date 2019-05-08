@@ -18,8 +18,8 @@ CREATE TABLE Skills (SkillID Int NOT NULL, CONSTRAINT PK_SkillIDSkills PRIMARY K
 CREATE TABLE WonProject (ProjectID Int NOT NULL, CONSTRAINT PK_ProjectIDWonProject PRIMARY KEY (ProjectID), IsComplete varchar(1) NOT NULL, RecievedPayment varchar(1) NOT NULL);
 CREATE TABLE Work (PersonID Int NOT NULL, SkillID Int NOT NULL, ProjectID Int NOT NULL, WorkID Int NOT NULL, CONSTRAINT PK_WorkIDWork PRIMARY KEY (WorkID), DayWorked Date NOT NULL, HoursWorked Int NOT NULL, IsStateWork varchar(1) NOT NULL, IsOverTime varchar(1) NOT NULL);
 ALTER TABLE Bid ADD CONSTRAINT FK_ProjectIDBid FOREIGN KEY (ProjectID) REFERENCES Project(ProjectID);
-ALTER TABLE Demographic ADD CONSTRAINT FK_DemographicDemographic FOREIGN KEY (Demographic) REFERENCES Employee(Demographic);
 ALTER TABLE Employee ADD CONSTRAINT FK_PersonIDEmployee FOREIGN KEY (PersonID) REFERENCES Person(PersonID);
+ALTER TABLE Employee ADD CONSTRAINT FK_DemographicEmployee FOREIGN KEY (Demographic) REFERENCES Demographic(Demographic);
 ALTER TABLE EmployeeSkill ADD CONSTRAINT FK_PersonIDEmployeeSkill FOREIGN KEY (PersonID) REFERENCES Employee(PersonID);
 ALTER TABLE EmployeeSkill ADD CONSTRAINT FK_SkillIDEmployeeSkill FOREIGN KEY (SkillID) REFERENCES Skills(SkillID);
 ALTER TABLE Inspector ADD CONSTRAINT FK_PersonIDInspector FOREIGN KEY (PersonID) REFERENCES Person(PersonID);
