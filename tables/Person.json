@@ -43,8 +43,8 @@
      "Nullable":"False",
      "KeyType":""
      },
-     {"Name":"Type",
-     "Type":"varchar(10)",
+     {"Name":"Phone",
+     "Type":"varchar(20)",
      "Nullable":"False",
      "KeyType":""
      }
