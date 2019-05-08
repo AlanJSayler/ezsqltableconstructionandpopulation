@@ -1,0 +1,65 @@
+INSERT INTO Person VALUES (1, 'Anderson', 'Abel', '123afakeemail@something.com', '123 fake street', 'Indiana city', 'in', '55113', 'Employee');
+
+INSERT INTO Person VALUES (2, 'Banderson', 'Babel', '456afakeemail@something.com', '456 fake street', 'Indiana city', 'in', '55113', 'Employee');
+
+INSERT INTO Person VALUES (3, 'Canderson', 'Cabel', '789afakeemail@something.com', '789 fake street', 'Indiana city', 'in', '55113', 'Employee');
+
+INSERT INTO Person VALUES (6, 'Danderson', 'Dabel', '101010afakeemail@something.com', '1010 fake street', 'Indiana city', 'in', '55113', 'Employee');
+
+
+INSERT INTO Employee VALUES (1, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 5, 'M', 'N');
+
+INSERT INTO Employee VALUES (2, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 5, 'F', 'N');
+
+INSERT INTO Employee VALUES (3, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 2, 'F', 'N');
+
+INSERT INTO Employee VALUES (4, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 2, 'M', 'N');
+
+
+INSERT INTO WonProject VALUES (1, 'N', 'N');
+
+INSERT INTO Work VALUES (1, 1, 1, 1, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 8, 'N');
+
+INSERT INTO Work VALUES (2, 1, 1, 2, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 7, 'N');
+
+INSERT INTO Work VALUES (3, 1, 1, 3, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 6, 'N');
+
+INSERT INTO Work VALUES (4, 1, 1, 4, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 5, 'N');
+
+INSERT INTO Work VALUES (4, 2, 1, 5, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 4, 'N');
+
+INSERT INTO Work VALUES (3, 2, 1, 6, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 3, 'N');
+
+INSERT INTO Work VALUES (2, 2, 1, 7, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 2, 'N');
+
+INSERT INTO Work VALUES (1, 2, 1, 8, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 1, 'N');
+
+INSERT INTO Work VALUES (1, 3, 1, 9, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 2, 'N');
+
+INSERT INTO Work VALUES (2, 3, 1, 9, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 3, 'N');
+
+INSERT INTO Work VALUES (3, 3, 1, 10, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 4, 'N');
+
+INSERT INTO Work VALUES (4, 3, 1, 11, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 5, 'N');
+
+INSERT INTO Work VALUES (4, 4, 1, 12, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 6, 'N');
+
+INSERT INTO Work VALUES (3, 4, 1, 13, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 7, 'N');
+
+INSERT INTO Work VALUES (2, 4, 1, 14, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 8, 'N');
+
+INSERT INTO Work VALUES (1, 4, 1, 15, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 9, 'N');
+
+INSERT INTO Work VALUES (1, 5, 1, 16, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 10, 'N');
+
+INSERT INTO Work VALUES (2, 5, 1, 17, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 9, 'N');
+
+INSERT INTO Work VALUES (3, 5, 1, 18, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 8, 'N');
+
+INSERT INTO Work VALUES (4, 5, 1, 19, TO_DATE('2014-12-12', 'YYYY-MM-DD'), 7, 'N');
+
+SELECT s.Classification, SUM(w.HoursWorked), e.Gender, e.Demographic
+FROM Skills s
+INNER JOIN Work w ON w.SkillID = s.SkillID
+INNER JOIN Employee e ON e.PersonID = w.PersonID
+GROUP BY s.Classification, e.Gender, e.Demographic;
