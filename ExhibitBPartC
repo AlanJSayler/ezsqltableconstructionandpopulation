@@ -9,7 +9,7 @@ Values
 INSERT INTO Organization
 (OrganizationID, Name, Email, StreetAddress, City, State, Zip, isState)
 Values
-(1, 'Coolconstructioncompany', 'anormalemailaddress@gmail.com', '123 industry street', 'Waverly', 'IN', '55113', 'N');
+(2, 'Coolconstructioncompany', 'anormalemailaddress@gmail.com', '123 industry street', 'Waverly', 'IN', '55113', 'N');
 
 INSERT INTO Location
 (LocationID, StreetAddress, City, State, Zip, SiteVisited, VisitationNotes, LocationDescription)

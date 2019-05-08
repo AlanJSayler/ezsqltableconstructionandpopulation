@@ -1,0 +1,13 @@
+{
+  "Fields": [
+    {"Name":"Demographic",
+     "Type":"Int",
+     "Nullable":"False",
+     "KeyType":"Combined",
+     "Reference":"Employee"},
+    {"Name":"Description",
+     "Type":"varchar(40)",
+     "Nullable":"False",
+     "KeyType":""}
+  ]
+}
