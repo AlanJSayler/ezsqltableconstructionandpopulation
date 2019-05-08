@@ -1,0 +1,1 @@
+SELECT SkillCode, Rate, Classification, FringeBenefits, Rate+FringeBenefits FROM Skills
