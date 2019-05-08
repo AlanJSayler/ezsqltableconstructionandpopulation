@@ -14,7 +14,7 @@ VALUES
 (3, 'MAS', 'Masonry', 17, 3);
 
 INSERT INTO Skills
-(SkillID, SkillCode, Classification Rate, FringeBenefits)
+(SkillID, SkillCode, Classification, Rate, FringeBenefits)
 VALUES
 (4, 'IRN', 'Iron Work', 17, 3);
 
